@@ -1,0 +1,469 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://scripts/Int_5.gd" type="Script" id=1]
+[ext_resource path="res://assets/palla5.png" type="Texture" id=2]
+[ext_resource path="res://assets/start_session_5.png" type="Texture" id=3]
+[ext_resource path="res://assets/connection_button.png" type="Texture" id=4]
+[ext_resource path="res://assets/reg.png" type="Texture" id=5]
+[ext_resource path="res://assets/indietro.png" type="Texture" id=6]
+[ext_resource path="res://assets/rettangolo5.png" type="Texture" id=7]
+[ext_resource path="res://assets/ombra5.png" type="Texture" id=8]
+[ext_resource path="res://assets/ombra5_1.png" type="Texture" id=9]
+[ext_resource path="res://assets/pause.png" type="Texture" id=10]
+[ext_resource path="res://assets/stop.png" type="Texture" id=11]
+[ext_resource path="res://assets/collare.png" type="Texture" id=12]
+[ext_resource path="res://assets/connessione-removebg-preview.png" type="Texture" id=13]
+[ext_resource path="res://assets/navigation_hover-tap.wav" type="AudioStream" id=14]
+[ext_resource path="res://assets/navigation_selection-complete-celebration.wav" type="AudioStream" id=15]
+
+[sub_resource type="Animation" id=1]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("collare:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 12 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("connessione1:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 13 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("connessione2:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 13 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("connessione1:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("connessione2:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("connessione3:visible")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ false ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "connessione"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/path = NodePath("connessione1:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("connessione2:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("connessione3:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ false, true ]
+}
+
+[node name="Int_5" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_rotation = 0.0243901
+script = ExtResource( 1 )
+
+[node name="collare" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.478
+anchor_right = 0.5
+anchor_bottom = 0.478
+margin_left = -330.704
+margin_top = -221.849
+margin_right = 107.296
+margin_bottom = 158.151
+rect_scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 12 )
+
+[node name="connessione1" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.769
+anchor_top = 0.453
+anchor_right = 0.769
+anchor_bottom = 0.453
+margin_left = 17.4799
+margin_top = -82.76
+margin_right = 162.48
+margin_bottom = 95.24
+rect_rotation = 70.0
+rect_scale = Vector2( 0.8, 0.5 )
+texture = ExtResource( 13 )
+
+[node name="connessione2" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.803
+anchor_top = 0.451
+anchor_right = 0.803
+anchor_bottom = 0.451
+margin_left = -5.92596
+margin_top = -127.286
+margin_right = 139.074
+margin_bottom = 50.7144
+rect_rotation = 70.0
+rect_scale = Vector2( 1.3, 0.7 )
+texture = ExtResource( 13 )
+
+[node name="connessione3" type="TextureRect" parent="."]
+visible = false
+anchor_left = 0.756
+anchor_top = 0.453
+anchor_right = 0.756
+anchor_bottom = 0.453
+margin_left = 23.872
+margin_top = -43.1177
+margin_right = 168.872
+margin_bottom = 134.882
+rect_rotation = 72.0
+rect_scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 13 )
+
+[node name="luce" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 1.149
+anchor_right = 0.5
+anchor_bottom = 1.149
+margin_left = -1004.69
+margin_top = 872.118
+margin_right = 726.31
+margin_bottom = 2931.12
+rect_rotation = -90.0
+texture = ExtResource( 8 )
+
+[node name="luce2" type="TextureRect" parent="."]
+anchor_left = 1.071
+anchor_top = 0.013
+anchor_right = 1.071
+anchor_bottom = 0.013
+margin_left = -1456.36
+margin_top = 728.168
+margin_right = 861.641
+margin_bottom = 3375.17
+rect_rotation = -77.8
+texture = ExtResource( 9 )
+
+[node name="titolo" type="TextureRect" parent="."]
+anchor_left = 0.058
+anchor_top = 0.129
+anchor_right = 0.956
+anchor_bottom = 0.191
+margin_left = -7.64
+margin_top = -0.680054
+margin_right = -371.48
+margin_bottom = -44.7201
+rect_scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 3 )
+
+[node name="connection" type="TextureRect" parent="."]
+anchor_left = 0.103
+anchor_top = 0.259
+anchor_right = 0.88
+anchor_bottom = 0.348
+margin_left = -0.240005
+margin_top = -0.279999
+margin_right = -0.400085
+margin_bottom = -0.160034
+
+[node name="connection_control" type="Control" parent="connection"]
+anchor_right = 1.0
+anchor_bottom = 1.029
+margin_left = -1.0
+margin_top = -16.0
+margin_right = -314.0
+margin_bottom = -71.959
+rect_scale = Vector2( 1.6, 1.6 )
+
+[node name="connection_button" type="Sprite" parent="connection/connection_control"]
+position = Vector2( 262.663, 81.1089 )
+texture = ExtResource( 4 )
+
+[node name="audio_connection" type="AudioStreamPlayer" parent="connection/connection_control"]
+stream = ExtResource( 15 )
+
+[node name="reg" type="TextureRect" parent="."]
+anchor_left = 0.356
+anchor_top = 0.633
+anchor_right = 0.629
+anchor_bottom = 0.778
+margin_left = -0.480011
+margin_top = 0.640015
+margin_right = -111.32
+margin_bottom = -103.76
+rect_scale = Vector2( 1.6, 1.6 )
+
+[node name="reg_control" type="Control" parent="reg"]
+anchor_left = -0.016
+anchor_right = 1.022
+anchor_bottom = 1.0
+margin_left = -0.0559978
+margin_right = -0.0481415
+
+[node name="reg_button" type="Sprite" parent="reg/reg_control"]
+position = Vector2( 98.4847, 84.856 )
+texture = ExtResource( 5 )
+
+[node name="pause" type="TextureRect" parent="."]
+anchor_left = 0.102
+anchor_top = 0.702
+anchor_right = 0.308
+anchor_bottom = 0.811
+margin_left = 0.413818
+margin_top = 0.113037
+margin_right = -83.0662
+margin_bottom = -78.167
+rect_scale = Vector2( 1.6, 1.6 )
+
+[node name="pause_control" type="Control" parent="pause"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="pause_button" type="Sprite" parent="pause/pause_control"]
+position = Vector2( 68.7779, 65.5956 )
+texture = ExtResource( 10 )
+
+[node name="stop" type="TextureRect" parent="."]
+anchor_left = 0.682
+anchor_top = 0.703
+anchor_right = 0.888
+anchor_bottom = 0.809
+margin_left = 0.0118408
+margin_top = -6.07349
+margin_right = -83.4682
+margin_bottom = -78.5935
+rect_scale = Vector2( 1.6, 1.6 )
+
+[node name="stop_control" type="Control" parent="stop"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="stop_button" type="Sprite" parent="stop/stop_control"]
+position = Vector2( 69.403, 65.5955 )
+texture = ExtResource( 11 )
+
+[node name="indietro" type="TextureRect" parent="."]
+anchor_left = 0.064
+anchor_top = 0.877
+anchor_right = 0.197
+anchor_bottom = 0.949
+margin_left = -4.38442
+margin_top = 44.1327
+margin_right = -58.0244
+margin_bottom = -8.1073
+rect_scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 6 )
+
+[node name="indietro_control_5" type="Control" parent="indietro"]
+anchor_right = 0.967
+anchor_bottom = 1.0
+margin_right = 0.00299835
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="indietro/indietro_control_5"]
+stream = ExtResource( 14 )
+
+[node name="palle_sopra" type="TextureRect" parent="."]
+anchor_left = 0.942
+anchor_top = 0.227
+anchor_right = 0.942
+anchor_bottom = 0.227
+margin_left = -41.191
+margin_top = -39.2555
+margin_right = 27.8089
+margin_bottom = 25.7445
+rect_rotation = -0.122288
+rect_scale = Vector2( 1.2, 1.2 )
+texture = ExtResource( 2 )
+
+[node name="palle_sopra4" type="TextureRect" parent="."]
+anchor_left = 0.722
+anchor_top = 0.924
+anchor_right = 0.722
+anchor_bottom = 0.924
+margin_left = -37.0202
+margin_top = -36.3961
+margin_right = 31.9798
+margin_bottom = 28.6039
+rect_rotation = -0.122288
+texture = ExtResource( 2 )
+
+[node name="palle_sopra2" type="TextureRect" parent="."]
+anchor_left = 0.277
+anchor_top = 0.078
+anchor_right = 0.277
+anchor_bottom = 0.078
+margin_left = -28.1072
+margin_top = -25.8754
+margin_right = 40.8928
+margin_bottom = 39.1246
+rect_rotation = -0.122288
+rect_scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 2 )
+
+[node name="palle_sopra3" type="TextureRect" parent="."]
+anchor_left = 0.057
+anchor_top = 0.353
+anchor_right = 0.057
+anchor_bottom = 0.353
+margin_left = -17.2786
+margin_top = -16.7787
+margin_right = 51.7214
+margin_bottom = 48.2213
+rect_rotation = -0.122288
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="palle_sopra5" type="TextureRect" parent="."]
+anchor_left = 0.924
+anchor_top = 0.702
+anchor_right = 0.924
+anchor_bottom = 0.702
+margin_left = -17.353
+margin_top = -16.2573
+margin_right = 51.647
+margin_bottom = 48.7427
+rect_rotation = -0.122288
+rect_scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+
+[node name="palle_sopra6" type="TextureRect" parent="."]
+anchor_left = 0.884
+anchor_top = 0.382
+anchor_right = 0.884
+anchor_bottom = 0.382
+margin_left = -10.4116
+margin_top = -8.84192
+margin_right = 58.5884
+margin_bottom = 56.1581
+rect_rotation = -0.122288
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+
+[node name="palle_sotto" type="TextureRect" parent="."]
+anchor_left = 0.099
+anchor_top = 0.689
+anchor_right = 1.0
+anchor_bottom = 0.934
+margin_left = -46.6182
+margin_top = -613.906
+margin_right = -968.698
+margin_bottom = -1021.31
+rect_scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 7 )
+
+[node name="palle_sotto2" type="TextureRect" parent="."]
+anchor_left = 0.752
+anchor_top = 0.066
+anchor_right = 0.752
+anchor_bottom = 0.066
+margin_left = 25.8804
+margin_top = -32.0767
+margin_right = 76.8804
+margin_bottom = 30.9234
+rect_rotation = 77.8
+texture = ExtResource( 7 )
+
+[node name="palle_sotto3" type="TextureRect" parent="."]
+anchor_left = 0.804
+anchor_top = 0.897
+anchor_right = 0.804
+anchor_bottom = 0.897
+margin_left = 34.4041
+margin_top = -21.6241
+margin_right = 85.4041
+margin_bottom = 41.3759
+rect_rotation = 97.3
+texture = ExtResource( 7 )
+
+[node name="palle_sotto4" type="TextureRect" parent="."]
+anchor_left = 0.245
+anchor_top = 0.857
+anchor_right = 0.245
+anchor_bottom = 0.857
+margin_left = 32.0891
+margin_top = -26.5662
+margin_right = 83.0891
+margin_bottom = 36.4338
+rect_rotation = 87.6
+texture = ExtResource( 7 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 1 )
+anims/connessione = SubResource( 2 )
+
+[connection signal="gui_input" from="connection/connection_control" to="." method="_on_connection_control_gui_input"]
+[connection signal="gui_input" from="reg/reg_control" to="." method="_on_reg_control_gui_input"]
+[connection signal="gui_input" from="pause/pause_control" to="." method="_on_pause_control_gui_input"]
+[connection signal="gui_input" from="stop/stop_control" to="." method="_on_stop_control_gui_input"]
+[connection signal="gui_input" from="indietro/indietro_control_5" to="." method="_on_indietro_control_5_gui_input"]
