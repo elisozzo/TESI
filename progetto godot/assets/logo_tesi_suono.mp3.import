@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/logo_tesi_suono.mp3-882793f807013fe36e7010105d853e85.mp3str"
+
+[deps]
+
+source_file="res://assets/logo_tesi_suono.mp3"
+dest_files=[ "res://.import/logo_tesi_suono.mp3-882793f807013fe36e7010105d853e85.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
