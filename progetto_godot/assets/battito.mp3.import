@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/battito.mp3-b3d21f9515e4b2e687dd854a0e5d7420.mp3str"
+
+[deps]
+
+source_file="res://assets/battito.mp3"
+dest_files=[ "res://.import/battito.mp3-b3d21f9515e4b2e687dd854a0e5d7420.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

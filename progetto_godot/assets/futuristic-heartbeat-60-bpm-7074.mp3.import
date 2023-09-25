@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/futuristic-heartbeat-60-bpm-7074.mp3-38c83adb5a8746ad441416b4d5e24009.mp3str"
+
+[deps]
+
+source_file="res://assets/futuristic-heartbeat-60-bpm-7074.mp3"
+dest_files=[ "res://.import/futuristic-heartbeat-60-bpm-7074.mp3-38c83adb5a8746ad441416b4d5e24009.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

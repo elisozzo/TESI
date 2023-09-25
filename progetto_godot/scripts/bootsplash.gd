@@ -8,9 +8,11 @@ func _on_Timer_timeout():
 
 func _on_Timer3_timeout():
 	$battito.play("battito")
+	$battito_suono.play(0.0)
 
 func _on_Timer2_timeout():
 	$battito.stop(true)
+	$battito_suono.stop()
 
 
 
